@@ -1,0 +1,19 @@
+        if ( y0 <= y1 <= ((sqrt(3)/2)*22)+y0 ) and  ( x0-22 <= x1 <= x0 ) :
+            z = degrees(acos(a))
+            angl.set(z%360)
+            angle.set((angl.get()-90)%360)
+            
+        if ( ((sqrt(3)/2)*22 )+y0 <= y1 <= y0+22 ) and  ( x0-22 <= x1 <= x0 ) :
+            z = degrees(acos(a))
+            angl.set(z%360)
+            angle.set(-(angl.get())%360)
+            
+        if ( ((sqrt(3)/2)*22 )+y0 <= y1 <= y0+22 ) and  ( x0+22 <= x1 <= x0 ) :
+            z = degrees(acos(a))
+            angl.set(z%360)
+            angle.set((90-(angl.get()))%360)
+            
+        if ( y0 <= y1 <= ((sqrt(3)/2)*22)+y0 ) and  ( x0+22 <= x1 <= x0 ) :
+            z = degrees(acos(a))
+            angl.set(z%360)
+            angle.set(-(angl.get())%360)    
